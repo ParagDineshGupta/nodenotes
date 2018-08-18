@@ -15,6 +15,11 @@ app.get('/',index,function(req,res){
 	res.send('hello we are going in right direction');
 });
 
+// what a http req contains
+var myhttprequest = require('./routes/myhttprequest');
+app.get('/myhttprequest',myhttprequest);
+
+
 
 //To skip the rest of the middleware functions from a router middleware stack, call next('route') to pass control to the next route. NOTE: next('route') will work only in middleware functions that were loaded by using the app.METHOD() or router.METHOD() functions.
 app.get('/user/:id', function (req, res, next) {
