@@ -12,3 +12,5 @@ var app = express();
 8.run npm i express --save ,for fast routing
 9.run npm start
 10 make new folders in mynode:assets,routes,config
+
+Now Open my app.js file
